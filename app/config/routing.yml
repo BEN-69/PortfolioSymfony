@@ -1,0 +1,9 @@
+ben_admin:
+    resource: "@BenAdminBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+ben_portfolio:
+    resource: "@BenPortfolioBundle/Controller/"
+    type:     annotation
+    prefix:   /

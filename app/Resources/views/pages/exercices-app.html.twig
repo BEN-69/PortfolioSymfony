@@ -1,0 +1,69 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+    {% include(':default:global-page-header.html.twig') %}
+
+
+    <section id="blog-full-width">
+        <div class="container">
+
+            {#  Application c# #}
+            <div class="row">
+                <div class="col-md-8">
+                    <article class="wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">
+                        <div class="blog-content">
+                            <h2 class="blogpost-title">
+                                Application C#
+                            </h2>
+
+                            <div class="blog-meta">
+                                <span><b>Date :</b> Dec 11, 2014 </span>
+                                <span><b>Tp</b></span><br>
+                                <span><b>Langages web :</b> développer par C#</span><br>
+                                <span><b>Logiciels :</b> Visual Studio</span><br>
+                                <span><b>Systèmes d’exploitation :</b>Windows</span>
+                            </div>
+                            <p>
+                                Dans le cadre de ma formation au Isitech, j'ai réalise des application windows sous c#
+                            <ul>
+                                <li>
+                                    Une simple calculatrise
+                                </li>
+                                <li>
+                                    Un convertisseur monetaire
+                                </li>
+                                <li>
+                                    Un simple jeu
+                                </li>
+                            </ul>
+                            </p>
+                            <a href="{{ asset('Resources/public/dowApp/csharp/convertisseurMonetaire/index.html') }}" class="btn btn-dafault btn-details">Télécharger le convertisseurMonetaire</a>
+                            <a href="{{ asset('Resources/public/dowApp/csharp/calculatrice/index.html') }}" class="btn btn-dafault btn-details">Télécharger la calculatrice</a>
+
+                        </div>
+
+                    </article>
+                </div>
+
+                <div class="col-sm-4">
+                    <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay=".9s">
+                        <div class="img-wrapper">
+                            <img src="{{ asset('Resources/public/images/exercices/app_caculatrice.png') }}" class="img-responsive" alt="this is a title" >
+                            <div class="overlay">
+                                <div class="buttons">
+                                    <a rel="gallery" class="fancybox" href="{{ asset('Resources/public/images/exercices/app_convertisseur.png') }}">Voir l'exercice</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+{% endblock %}

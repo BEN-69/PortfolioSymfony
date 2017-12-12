@@ -1,0 +1,172 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+    {% include(':default:global-page-header.html.twig') %}
+
+
+
+    <section id="blog-full-width">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <article class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">
+                        <div class="blog-content">
+                            <h2 class="blogpost-title">
+                                CeliaFiles - C# & sql
+                            </h2>
+                            <div class="blog-meta">
+                                <span><b>Date :</b> Dec 11, 2014 </span>
+                                <span><b>Projet Fin d'étude</b></span><br>
+                                <span><b>Langages web :</b> développer par C# & sql</span><br>
+                                <span><b>Logiciels :</b> Visual Studio & SQL Server Studio</span><br>
+                                <span><b>Systèmes d’exploitation :</b>Windows</span>
+                            </div>
+                            <p>
+                                Dans le cadre de ma formation au Isitech, J'ai réalise un projet fin d’étude en binôme avec un informaticien dans le domaine Système réseau le projet consiste :
+                            <ul>
+                                <li>
+                                    Développement d’une application dédiée
+                                </li>
+                                <li>
+                                    Application installée sur un ou plusieurs serveurs, accessibles à distance (RDP)
+                                </li>
+                                <li>
+                                    Infrastructure complètement virtualité
+                                </li>
+                                <li>
+                                    Stockage des fichiers sur un serveur dédié
+                                </li>
+                                <li>
+                                    Visualisation en temps réel du contenu
+                                </li>
+                                <li>
+                                    Cette application développé sous c# .
+                                </li>
+                            </ul>
+                            </p>
+
+                            <a class="btn btn-dafault btn-details" href="{{ asset('Resources/public/doc/Rapport.pdf') }}">voir rapport </a>
+                            <a class="btn btn-dafault btn-details" href="{{ asset('Resources/public/doc/Presentation.pptx') }}">voir la présentation </a>
+
+                        </div>
+
+                    </article>
+                </div>
+
+                <div class="col-sm-4">
+                    <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay=".3s">
+                        <div class="img-wrapper">
+                            <img src="{{ asset('Resources/public/images/applications/celiaFiles.png') }}" class="img-responsive" alt="this is a title" >
+                            <div class="overlay">
+                                <div class="buttons">
+                                    <a rel="gallery" class="fancybox" href="{{ asset('Resources/public/images/applications/celiaFiles.png') }}">Demo</a>
+                                    <a rel="gallery" class="fancybox" href="{{ asset('Resources/public/images/applications/celiaFiles_g.png') }}">Demo</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-8">
+                    <article class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">
+                        <div class="blog-content">
+                            <h2 class="blogpost-title">
+                                <a href="post-fullwidth.html">Un simple jeu - C# </a>
+                            </h2>
+                            <div class="blog-meta">
+                                <span><b>Date :</b> Dec 11, 2014 </span>
+                                <span><b>Tp</b></span><br>
+                                <span><b>Langages web :</b> développer par C#</span><br>
+                                <span><b>Logiciels :</b> Visual Studio</span><br>
+                                <span><b>Systèmes d’exploitation :</b>Windows</span>
+                            </div>
+                            <p>
+                                Dans le cadre de ma formation au Isitech, J'ai réalise un jeu en c# sans monogame.
+                            </p>
+                            <a href="{{ asset('Resources/public/dowApp/csharp/game/index.html') }}" class="btn btn-dafault btn-details">Télécharger le jeu</a>
+
+                        </div>
+
+                    </article>
+                </div>
+
+                <div class="col-sm-4">
+                    <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay=".5s">
+                        <div class="img-wrapper">
+                            <img src="{{ asset('Resources/public/images/applications/app_game.png') }}" class="img-responsive" alt="this is a title" >
+                            <div class="overlay">
+                                <div class="buttons">
+                                    <a rel="gallery" class="fancybox" href="{{ asset('Resources/public/images/applications/app_game.png') }}">1 </a>
+                                    <a rel="gallery" class="fancybox" href="{{ asset('Resources/public/images/applications/app_game2.png') }}">2 </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-md-8">
+                    <article class="wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">
+                        <div class="blog-content">
+                            <h2 class="blogpost-title">
+                                <a href="post-fullwidth.html">Projet gestion des incidents</a>
+                            </h2>
+                            <div class="blog-meta">
+                                <span><b>Date :</b> Dec 11, 2014 </span>
+                                <span><b>Tp</b></span><br>
+                                <span><b>Langages web :</b> développer par C#</span><br>
+                                <span><b>Logiciels :</b> Visual Studio</span><br>
+                                <span><b>Systèmes d’exploitation :</b>Windows</span>
+                            </div>
+                            <p>
+                                Dans le cadre de ma formation au Cnam l'UE GLG105: Génie logiciel.
+                                J'ai réalise en groupe de cinq auditeurs un projet qui permet de modéliser
+                                la gestion d’intervention effectuée au moment des sinistres et des crimes par
+                                Le Service de Police Nationale en France cherche
+                            <ul>
+                                J'ai éffectue :
+                                <li>Le diagramme des cas d'utilisation de ce système</li>
+                                <li>Le diagramme de classes de ce système</li>
+                                <li>Le diagramme de séquences</li>
+                            </ul>
+                            </p>
+                            <a href="single-post.html" class="btn btn-dafault btn-details">Continue Reading</a>
+                        </div>
+
+                    </article>
+                </div>
+
+                <div class="col-sm-4">
+                    <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay=".7s">
+                        <div class="img-wrapper">
+                            <img src="{{ asset('Resources/public/images/applications/gestionIccident.png') }}" class="img-responsive" alt="this is a title" >
+                            <div class="overlay">
+                                <div class="buttons">
+                                    <a rel="gallery" class="fancybox" href="{{ asset('Resources/public/images/applications/gestionIccident.png') }}">Demo</a>
+                                    <a rel="gallery" class="fancybox" href="{{ asset('Resources/public/images/portfolio/item-2.jpg') }}">Demo</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </section>
+
+{% endblock %}

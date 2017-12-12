@@ -1,0 +1,188 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+    {% include(':default:global-page-header.html.twig') %}
+
+
+    <section id="blog-full-width">
+        <div class="container">
+
+
+            {# Site Gestion scolarite #}
+            <div class="row">
+                <div class="col-md-8">
+                    <article class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">
+                        <div class="blog-content">
+                            <h2 class="blogpost-title">
+                                Gestion scolarite en PHP
+                            </h2>
+                            <div class="blog-meta">
+                                <span><b>Langages web :</b> PHP/MYSQL - Framework  Boostrap - </span><br>
+                                <span><b>Logiciels :</b> Aptana Studio3 - MAMP , Paint</span><br>
+                                <span><b>Systèmes d’exploitation :</b> Mac OS</span>
+                            </div>
+                            Exemple d'application web basée sur la technologie PHP. les données sont stockées dans une base de données MySQL.
+                            Dans ce projet le site permet :<br/>
+                            <ul>
+                                <li>l'affichage d'une liste des étudiants.
+                                <li>
+                                    Sécuriser l'application en imposant une procédure d'authentification
+                                </li>
+                                <li>
+                                    Créer un formulaire de saisie d'un étudiant défini.
+                                </li>
+                                <li>
+                                    Formulaire de contact.
+                                </li>
+
+                            </ul>
+
+                            <a href="http://brportfolio.pe.hu/gestionScolarite/"  target="_blank" class="btn btn-dafault btn-details">Voir l'exercice</a>
+
+                        </div>
+
+                    </article>
+                </div>
+
+                <div class="col-sm-4">
+                    <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay=".3s">
+                        <div class="img-wrapper">
+                            <img src="{{ asset('Resources/public/images/exercices/img_scolarite1.png') }}" class="img-responsive" alt="this is a title" >
+                            <div class="overlay">
+                                <div class="buttons">
+                                    <a rel="gallery" class="fancybox" href="{{ asset('Resources/public/images/exercices/img_scolarite2.png') }}">1</a>
+                                    <a rel="gallery" class="fancybox" href="{{ asset('Resources/public/images/exercices/img_scolarite3.png') }}">2</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+
+
+            </div>
+
+            {# Une formulaire de commentaire sans base de données #}
+            <div class="row">
+                <div class="col-md-8">
+                    <article class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">
+                        <div class="blog-content">
+                            <h2 class="blogpost-title">
+                                Une formulaire de commentaire sans base de données
+                            </h2>
+                             <div class="blog-meta">
+                                <span><b>Langages web :</b> PHP - Bootstrap</span><br>
+                                <span><b>Logiciels :</b> Aptana Studio3</span><br>
+                                <span><b>Systèmes d’exploitation :</b> Mac OS</span>
+                             </div>
+                            <p>
+                                Dans le cadre de mon autoformation j'ai réalisé Une formulaire de commentaire dont les données sont stockées dans un fichier texte
+
+                            </p>
+                            <a href="http://brportfolio.pe.hu/commentaireSansbdd/" target="_blank" class="btn btn-dafault btn-details">Voir l'exercice</a>
+                        </div>
+
+                    </article>
+                </div>
+
+                <div class="col-sm-4">
+                    <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay=".5s">
+                        <div class="img-wrapper">
+                            <img src="{{ asset('Resources/public/images/exercices/imgCommentaire.png') }}" class="img-responsive" alt="this is a title" >
+                            <div class="overlay">
+                                <div class="buttons">
+                                    <a rel="gallery" class="fancybox" href="{{ asset('Resources/public/images/exercices/imgCommentaireP.png') }}">1</a>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+
+            {#  Drag & Drop #}
+            <div class="row">
+                <div class="col-md-8">
+                    <article class="wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">
+                        <div class="blog-content">
+                            <h2 class="blogpost-title">
+                                Drag & Drop en javaScript
+                            </h2>
+
+                            <div class="blog-meta">
+                                <span><b>Langages web :</b> PHP - JS - Bootstrap</span><br>
+                                <span><b>Logiciels :</b> Aptana Studio3</span><br>
+                                <span><b>Systèmes d’exploitation :</b> Mac OS</span>
+                            </div>
+                            <p>
+                                Dans le cadre de mon autoformation j'ai réalisé Un systeme qui permet Glisser-déposer de briques en javascript
+
+                            </p>
+                            <a href="http://brportfolio.pe.hu/Drag-Drop/" target="_blank" class="btn btn-dafault btn-details">Voir l'exercice </a>
+                        </div>
+
+                    </article>
+                </div>
+
+                <div class="col-sm-4">
+                    <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay=".7s">
+                        <div class="img-wrapper">
+                            <img src="{{ asset('Resources/public/images/exercices/drag-drop.png') }}" class="img-responsive" alt="this is a title" >
+                            <div class="overlay">
+                                <div class="buttons">
+                                    <a rel="gallery" class="fancybox" href="{{ asset('Resources/public/images/exercices/drag-drop.png') }}">Voir l'exercice</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+
+            {#  Convertiseur monétaire #}
+            <div class="row">
+                <div class="col-md-8">
+                    <article class="wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">
+                        <div class="blog-content">
+                            <h2 class="blogpost-title">
+                                Convertiseur monétaire en JavaScript
+                            </h2>
+
+                            <div class="blog-meta">
+                                <span><b>Langages web :</b> PHP - JS </span><br>
+                                <span><b>Logiciels :</b> Aptana Studio3</span><br>
+                                <span><b>Systèmes d’exploitation :</b> Mac OS</span>
+                            </div>
+                            <p>
+                                Dans le cadre de ma formation au Cnam l'UE NFE114 ,j'ai réalise un convertisseur de devises entièrement fonctionnel, affiché dans une page HTML. à l'aide de code javascript .
+                            </p>
+                            <a href="http://brportfolio.pe.hu/Drag-Drop/" target="_blank" class="btn btn-dafault btn-details">Voir l'exercice </a>
+                        </div>
+
+                    </article>
+                </div>
+
+                <div class="col-sm-4">
+                    <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay=".9s">
+                        <div class="img-wrapper">
+                            <img src="{{ asset('Resources/public/images/exercices/img_convetisseur.jpg') }}" class="img-responsive" alt="this is a title" >
+                            <div class="overlay">
+                                <div class="buttons">
+                                    <a rel="gallery" class="fancybox" href="{{ asset('Resources/public/images/exercices/img_convetisseur.jpg') }}">Voir l'exercice</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+{% endblock %}

@@ -1,0 +1,91 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+    {% include(':default:global-page-header.html.twig') %}
+
+    <!--
+    ==================================================
+        Company Description Section Start
+    ================================================== -->
+    <section class="company-description">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <h3 class="subtitle wow fadeInUp" data-wow-delay=".3s" data-wow-duration="500ms">Une petite présentation pour mieux me connaître</h3>
+                        <p  class="wow fadeInUp" data-wow-delay=".5s" data-wow-duration="500ms">
+                            Autodidacte, je suis en recherche constante de nouvelles connaissances afin de devenir plus performant et efficace dans mes recherches au quotidien.
+                            Suite à la formation Responsable de Projets Informatiques (R.P.I.) (Titre certiﬁé de niveau II) au sein de l'Institut Supérieur d'Ingénierie Informatique "ISITECH" de Lyon.
+                            je suis à la ￼recherche de nouvelles opportunités qui me permettrait de mettre en pratique mes compétences.
+                        <p class="wow fadeInUp" data-wow-delay=".7s" data-wow-duration="500ms">
+                            Passionné par le monde de l'informatique, des activités numériques, d'un naturel curieux.Je m’intéresse de près aux tendances du web, nouvelles technologies. Lors de ma participation à différents projets, j'ai pu manipuler de nombreux langages de programmation comme : HTML,CSS,JAVASCRIPT,AJAX,PHP,C#,JAVA. Durant mon stage à la société MEDINOV ,j'ai pu acquérir une réelle expérience de terrain dans le développement informatique. Je suis en mesure de développer des applications Web évoluées et professionnelles.
+
+                        </p>
+                        <p  class="wow fadeInUp" data-wow-delay=".9s" data-wow-duration="500ms">
+                            Ma rigueur m'a permis de m'orienter vers la programmation (POO) acquises lors de ma formation à ISITECH.
+                         </p>
+                        <p  class="wow fadeInUp" data-wow-delay=".9s" data-wow-duration="500ms">
+                            Sérieux et responsable, je souhaiterais mettre à profit mes compétences au sein d'une entreprise novatrice de la région RHÔNE.
+                        </p>
+
+                        <p>
+                        <div class="col-lg-2">
+
+                            <a href="{{ path ('Home') }}" >
+                                <button type="button"  class="btn btn-info"> Télécharger mon CV </button>
+                            </a>
+                        </div>
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--
+==================================================
+    Clients Section Start
+================================================== -->
+    <section id="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="subtitle text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay=".3s">Our Happy Clinets</h2>
+                    <p class="subtitle-des text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay=".5s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, error.</p>
+                    <div id="clients-logo" class="owl-carousel">
+                        <div>
+                            <img src="{{ asset('Resources/public/images/clients/logo-medinov.png') }}" alt="medinov">
+                        </div>
+                        <div>
+                            <img src="{{ asset('Resources/public/images/clients/logo-bulgarna.png') }}" alt="">
+                        </div>
+                        <div>
+                            <img src="{{ asset('Resources/public/images/clients/logo-3.jpg') }}" alt="">
+                        </div>
+                        <div>
+                            <img src="{{ asset('Resources/public/images/clients/logo-4.jpg') }}" alt="">
+                        </div>
+                        <div>
+                            <img src="{{ asset('Resources/public/images/clients/logo-5.jpg') }}" alt="">
+                        </div>
+                        <div>
+                            <img src="{{ asset('Resources/public/images/clients/logo-3.jpg') }}" alt="">
+                        </div>
+                        <div>
+                            <img src="{{ asset('Resources/public/images/clients/logo-4.jpg') }}" alt="">
+                        </div>
+                        <div>
+                            <img src="{{ asset('Resources/public/images/clients/logo-5.jpg') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

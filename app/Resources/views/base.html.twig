@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('Resources/public/images/favicon.ico') }}" />
+    <title>rb portfolio</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Template CSS Files
+    ================================================== -->
+    <!-- Twitter Bootstrs CSS -->
+
+    {% block stylesheets %}
+        {% stylesheets 'Resources/public/css/bootstrap.min.css'
+        'Resources/public/css/ionicons.min.css'
+        'Resources/public/css/animate.css'
+        'Resources/public/css/slider.css'
+        'Resources/public/css/owl.carousel.css'
+        'Resources/public/css/owl.theme.css'
+        'Resources/public/css/jquery.fancybox.css'
+        'Resources/public/css/main.css'
+        'Resources/public/css/responsive.css'
+        filter='cssrewrite' %}  
+
+        <link rel="stylesheet" href="{{ asset_url }}">  
+        {% endstylesheets %}  
+    {% endblock %}
+
+    <!-- Template Javascript Files
+    ================================================== -->
+
+    {% block javascripts %}
+        {% javascripts 'Resources/public/js/vendor/modernizr-2.6.2.min.js'
+        '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'
+        'Resources/public/js/owl.carousel.min.js'
+        'Resources/public/js/bootstrap.min.js'
+        'Resources/public/js/wow.min.js'
+        'Resources/public/js/slider.js'
+        'Resources/public/js/jquery.fancybox.js'
+        'Resources/public/js/main.js'
+
+        %}
+        <script src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+
+    {% endblock %}
+
+</head>
+<body>
+<!--
+==================================================
+Header Section Start
+================================================== -->
+{%  include 'default/header.html.twig' %}
+
+
+
+{% block body %}
+
+
+
+
+{% endblock %}
+
+<!--
+==================================================
+call-to-action Section Start
+================================================== -->
+{% include 'default/call-to-action.html.twig' %}
+
+
+<!--
+==================================================
+Footer Section Start
+================================================== -->
+{% include 'default/footer.html.twig' %}
+
+</body>
+
+
+
+</html>
+
